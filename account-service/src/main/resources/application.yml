@@ -2,7 +2,21 @@
 spring:
   application:
     name: account-service
-
+  datasource:
+      driverClassName: org.h2.Driver
+      url: jdbc:h2:~/test
+      username: sa
+      password:
+      h2:
+        console:
+          enabled: true
+  jpa:
+      hibernate.ddl-auto: update
+      generate-ddl: false
+      show-sql: false
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.H2Dialect
 ## Port on which this microservice is going to run
 server:
   port: 6060
