@@ -30,4 +30,3 @@ steps:
 - checkout: eureka-server
 - checkout: account-service
 - checkout: web-application
-submodules: true 
