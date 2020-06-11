@@ -25,5 +25,5 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- checkout: git://account-service/master
+- checkout: git://banking-appliction/master
   submodules: true 
