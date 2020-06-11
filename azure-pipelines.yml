@@ -15,6 +15,8 @@ resources:
     checkoutOptions:
       submodules: true
 steps:
+- checkout: git://account-service
+  submodules: true
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -25,8 +27,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- checkout: self
-- checkout: api-zuul-service
-- checkout: eureka-server
-- checkout: account-service
-- checkout: web-application
+
