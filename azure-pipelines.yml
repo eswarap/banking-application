@@ -15,7 +15,7 @@ resources:
     checkoutOptions:
       submodules: true
 steps:
-- checkout: git://account-service
+- checkout: git://banking-application/account-service
   submodules: true
 - task: Maven@3
   inputs:
